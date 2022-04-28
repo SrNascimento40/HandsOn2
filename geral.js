@@ -35,5 +35,4 @@ const populaCampos = (data) => {
 const getEventoPorId = (id) => {
   fetch(`${BASE_URL}/events/${id}`)
     .then((response) => response.json())
-    .then(populaCampos);
 };
