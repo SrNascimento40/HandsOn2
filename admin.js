@@ -27,7 +27,7 @@ const main = async () => {
         <td>${row.name}</td>
         <td>${row.attractions.join(", ")}</td>
         <td>
-          <a href="reservas.html?id=${row._id}" class="btn btn-dark"
+          <a href="apagar.html?id=${row._id}" class="btn btn-dark"
             >ver reservas</a
           >
           <a href="editar-evento.html?id=${

@@ -8,7 +8,9 @@
     <title>Sound Garden</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/HandsOn2/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/HandsOn2/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
@@ -16,12 +18,16 @@
         <img src="img/Sound-logo (1).png" width="300" alt="">
     </header>
     <main>
-        <section class="full d-flex justify-content-center align-items-center"
-            style="background-color: #F8BBD0; color: #fff">
-            <div class="text-center">
-                <h1>Adicione um banner maneiro aqui</h1>
+        
+            <div id="bannerShow">
+                <div class="carousel">
+                    <div><img src="/HandsOn2/banners/Arctic Monkeys.jpg" alt="Arctic Monkeys" id="artic"></div>
+                    <div><img src="/HandsOn2/banners/Hiatus Kaiyote.jpg" alt="Hiatus Kaiyote" id="hiatus" ></div>
+                    <div><img src="/HandsOn2/banners/The Kooks.jpg" alt="The Kooks" id="kooks"></div>    
+
+                </div>
             </div>
-        </section>
+     
         <section class="full">
             <div class="container text-center">
                 <h2>Próximos eventos</h2>
@@ -106,4 +112,8 @@
     </footer>
 </body>
 <script src="geral.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="/HandsOn2/index.js"></script>
 </html>
