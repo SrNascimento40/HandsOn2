@@ -1,3 +1,23 @@
+/* Código para responsividade do painel administrativo */
+
+const aside = document.querySelector('aside')
+const inputs = document.querySelectorAll('input')
+const textarea = document.querySelector('textarea')
+
+
+    const largura = window.screen.width;
+  
+    if(largura < 395){
+
+      aside.classList.remove('col-2')
+
+      inputs.forEach((input) =>{
+        input.style.width = '285px'
+      })
+
+      textarea.style.width = '310px'
+}
+
 const params = parseQueryString(window.location.search);
 
 if (!params.id) {

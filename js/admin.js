@@ -1,3 +1,15 @@
+/* Código para responsividade do painel administrativo */
+
+const aside = document.querySelector('aside')
+const imagem = document.querySelector('.img-responsive')
+
+    const largura = window.screen.width;
+    if(largura < 395){
+      aside.classList.remove('col-2')
+      imagem.style.width = "350px"
+
+    }
+
 const main = async () => {
     const tbody = document.querySelector("tbody");
     tbody.innerHTML = "";
