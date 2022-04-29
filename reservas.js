@@ -31,13 +31,18 @@ const main = async () => {
     tbody.innerHTML = "";
   
     //!!!editar o querySelector de acordo com o que colocar na página
-    document.querySelector("#eventoNome").innerHTML = dataEvent?.name;
+    document.querySelector("#oTituloDoEvento").innerHTML = dataEvent?.name;
     //mensagem se não tiver reservas
     if (dataBookings.length === 0) {
+      //criação da linha
       const trSemReserva = document.createElement("tr");
+      //dados da linha
       const tdSemReserva = document.createElement("td");
+      //formatação do texto
       tdSemReserva.setAttribute("colspan", 5);
+      //alinhamento do texto
       tdSemReserva.setAttribute("align", "center");
+      //adiciona o texto
       tdSemReserva.append("sem reserva disponível");
   
       trSemReserva.appendChild(tdSemReserva);
