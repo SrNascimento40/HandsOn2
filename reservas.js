@@ -42,7 +42,7 @@ const main = async () => {
     tbody.innerHTML = "";
   
     //!!!editar o querySelector de acordo com o que colocar na página
-    document.querySelector("#oTituloDoEvento").innerHTML = dataEvent?.name;
+    document.querySelector("#eventoNome").innerHTML = dataEvent?.name;
     //mensagem se não tiver reservas
     if (dataBookings.length === 0) {
       //criação da linha
