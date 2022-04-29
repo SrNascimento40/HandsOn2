@@ -26,8 +26,28 @@ aside {
     border-color: #C2185B;
 }
 
+#bannerShow img{        
+ width: 50%;  
+}
+
+#artic{
+    margin: auto
+}
+ #hiatus{
+    margin: auto;
+    margin-top: 50px;
+}
+#kooks{
+    margin: auto;
+    margin-top: 200px;
+}
+
 main.login {
     width: 400px;
+}
+
+img{
+    display: flex;
 }
 
 section.full{
@@ -47,4 +67,16 @@ footer nav ul{
 
 footer nav ul li  {
     padding: 10px;
+}
+
+@media (max-width: 395px){
+
+    *{
+        flex-direction: column;
+    }
+
+    img{
+        width: 350px;
+    }
+   
 }
